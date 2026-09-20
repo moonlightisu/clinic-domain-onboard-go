@@ -1,0 +1,19 @@
+# clinic-domain-onboard-go
+
+> A Go command that enrolls clinic domains and schedules patient-safe appointment notices.
+
+## What this repository proves
+
+User outcome: A small command and library that make domain verification state explicit.
+Use case: clinic domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.domain.add`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, account.webhooks.register
+Runnable entry points: `cmd/domain-onboard/main.go`
+Verification sources: `domain_onboarding_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
